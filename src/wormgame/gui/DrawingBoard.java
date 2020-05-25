@@ -35,7 +35,10 @@ public class DrawingBoard extends JPanel implements Updatable{
         graphics.setColor(Color.RED);
         graphics.fillOval(game.getApple().getX() * this.pieceLength, game.getApple().getY() * this.pieceLength, this.pieceLength, this.pieceLength);
     }
-    
+
+    /*
+    This is the class that refreshes the page and makes the game move.
+     */
     @Override
     public void update() {
         super.repaint();

@@ -9,6 +9,10 @@ package wormgame.domain;
  *
  * @author Colin
  */
+/*
+    This is the base class inherited by the Apple and Worm that establishes baseline information
+    and allows for testing if two pieces collide on the board.
+ */
 public class Piece {
     private int x;
     private int y;
@@ -25,7 +29,11 @@ public class Piece {
     public int getY() {
         return this.y;
     }
-    
+
+    /*
+    runsInto is used for validating the main gameplay loop of the snake game of the snake eating the apple.
+    It is also used to verify that a newly generated apple is not being placed in the path the snake is already in.
+     */
     public boolean runsInto(Piece piece) {
         if(piece.getX() == this.x && piece.getY() == this.y) {
             return true;

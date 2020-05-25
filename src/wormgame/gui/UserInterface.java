@@ -6,6 +6,9 @@ import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 import wormgame.game.WormGame;
 
+/*
+Only createComponents class was authored by Colin. The rest was provided by University of Helsinki Java MOOC.
+ */
 public class UserInterface implements Runnable {
 
     private JFrame frame;
