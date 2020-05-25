@@ -70,10 +70,10 @@ public class Worm {
                 this.pieces.remove(0);
             }
         }
-        System.out.println("move");
-        pieces.stream()
-                .forEach(System.out::println);
-
+//        System.out.println("move");
+//        pieces.stream()
+//                .forEach(System.out::println);
+        // comment these lines in if you want to see a visualization of the coordinates and movement functioning
         
         
     }
@@ -95,8 +95,8 @@ public class Worm {
     public void getNewPiece() {
         int x = this.pieces.get(pieces.size() - 1).getX();
         int y = this.pieces.get(pieces.size() - 1).getY();
-        System.out.println(String.format("Grow: %s %s", x, y));
-        System.out.println(this.direction);
+//        System.out.println(String.format("Grow: %s %s", x, y)); Just lines to help visualize movement
+//        System.out.println(this.direction);
         switch(this.direction) {
             case UP:
                 this.pieces.add(new Piece(x, y - 1));
